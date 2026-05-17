@@ -1,0 +1,150 @@
+/* ============================================================
+   GLOBAL COMPONENTS
+   nav · buttons · section labels · scroll-reveal · whatsapp · cta-strip
+   ============================================================ */
+
+/* ── Particles canvas ── */
+#particles {
+  position: fixed; top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none; z-index: 0; opacity: 0.4;
+}
+
+/* ── Nav ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 5vw; height: 72px;
+  background: rgba(8,8,16,0.85);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border);
+  transition: background 0.3s;
+}
+.nav-logo {
+  font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem;
+  letter-spacing: 0.12em; line-height: 1;
+  background: linear-gradient(90deg, var(--white), var(--neon));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.nav-logo span {
+  display: block; font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.55rem; letter-spacing: 0.35em;
+  color: var(--gray); -webkit-text-fill-color: var(--gray);
+}
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links a {
+  color: var(--gray); text-decoration: none;
+  font-size: 0.8rem; letter-spacing: 0.1em;
+  text-transform: uppercase; font-weight: 600; transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--neon); }
+.nav-cta {
+  background: linear-gradient(90deg, var(--neon2), var(--neon));
+  color: var(--black); font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700; font-size: 0.85rem; letter-spacing: 0.12em;
+  text-transform: uppercase; padding: 0.55rem 1.4rem;
+  border-radius: 3px; text-decoration: none;
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+.nav-cta:hover { box-shadow: 0 0 22px var(--neon-glow); transform: translateY(-1px); }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+.hamburger span { width: 26px; height: 2px; background: var(--neon); border-radius: 2px; transition: 0.3s; }
+
+/* ── Mobile menu ── */
+.mobile-menu {
+  display: none; position: fixed; inset: 0; z-index: 999;
+  background: rgba(8,8,16,0.98); flex-direction: column;
+  align-items: center; justify-content: center; gap: 2rem;
+  backdrop-filter: blur(20px);
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+  color: var(--white); text-decoration: none;
+  font-family: 'Bebas Neue', sans-serif; font-size: 2rem;
+  letter-spacing: 0.1em; transition: color 0.2s;
+}
+.mobile-menu a:hover { color: var(--neon); }
+.mobile-close { position: absolute; top: 1.5rem; right: 2rem; font-size: 2rem; cursor: pointer; color: var(--gray); }
+
+/* ── Buttons ── */
+.btn-primary {
+  background: linear-gradient(90deg, var(--neon2), var(--neon));
+  color: #000; font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.95rem; font-weight: 800; letter-spacing: 0.1em;
+  text-transform: uppercase; padding: 1rem 2.2rem;
+  border-radius: 4px; text-decoration: none; border: none; cursor: pointer;
+  box-shadow: 0 4px 30px rgba(0,198,255,0.3);
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+.btn-primary:hover { box-shadow: 0 6px 40px rgba(0,198,255,0.55); transform: translateY(-2px); }
+
+.btn-ghost {
+  border: 1.5px solid rgba(0,198,255,0.4); color: var(--white);
+  font-family: 'Barlow Condensed', sans-serif; font-size: 0.95rem;
+  font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 1rem 2.2rem; border-radius: 4px; text-decoration: none;
+  display: flex; align-items: center; gap: 0.6rem; background: transparent;
+  transition: background 0.3s, border-color 0.3s, transform 0.2s;
+}
+.btn-ghost:hover { background: rgba(0,198,255,0.08); border-color: var(--neon); transform: translateY(-2px); }
+.btn-ghost svg { width: 18px; height: 18px; fill: #25d366; }
+
+.btn-dark {
+  background: #000; color: var(--neon);
+  font-family: 'Barlow Condensed', sans-serif; font-size: 1rem;
+  font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 1rem 2.5rem; border-radius: 4px; text-decoration: none;
+  display: inline-block; box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+.btn-dark:hover { box-shadow: 0 6px 30px rgba(0,0,0,0.5); transform: translateY(-2px); }
+
+/* ── Section common ── */
+section { position: relative; z-index: 1; }
+.section-inner { max-width: 1300px; margin: 0 auto; padding: 7rem 5vw; }
+.section-label {
+  font-size: 0.72rem; letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--neon); font-weight: 700; margin-bottom: 0.8rem;
+  display: flex; align-items: center; gap: 0.7rem;
+}
+.section-label::before { content: ''; flex: 0 0 30px; height: 1.5px; background: var(--neon); }
+.section-h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.4rem, 5vw, 4.5rem); line-height: 0.95;
+  letter-spacing: 0.04em; color: var(--white);
+}
+.section-h2 span { color: var(--neon); }
+.section-p { max-width: 560px; color: var(--gray); font-size: 1rem; line-height: 1.75; margin-top: 1.2rem; font-weight: 300; }
+
+/* ── Scroll reveal ── */
+.reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.7s, transform 0.7s; }
+.reveal.visible { opacity: 1; transform: none; }
+
+/* ── WhatsApp float ── */
+.wa-float {
+  position: fixed; bottom: 2rem; right: 2rem; z-index: 999;
+  width: 60px; height: 60px; border-radius: 50%; background: #25d366;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.5); text-decoration: none;
+  animation: floatWA 3s ease-in-out infinite; transition: transform 0.3s, box-shadow 0.3s;
+}
+.wa-float:hover { transform: scale(1.1); box-shadow: 0 6px 30px rgba(37,211,102,0.7); animation: none; }
+.wa-float svg { width: 30px; height: 30px; fill: #fff; }
+.wa-tooltip {
+  position: absolute; right: 70px; background: rgba(0,0,0,0.85); color: #fff;
+  font-size: 0.78rem; padding: 0.4rem 0.8rem; border-radius: 6px; white-space: nowrap;
+  opacity: 0; pointer-events: none; transition: opacity 0.3s;
+}
+.wa-float:hover .wa-tooltip { opacity: 1; }
+@keyframes floatWA { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+
+/* ── CTA Strip ── */
+.cta-strip {
+  background: linear-gradient(90deg, var(--neon2), var(--neon));
+  padding: 3rem 5vw; text-align: center;
+}
+.cta-strip h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2rem,4vw,3.5rem); color: #000; letter-spacing: 0.04em;
+}
+.cta-strip p { color: rgba(0,0,0,0.65); font-size: 1rem; margin-top: 0.4rem; margin-bottom: 1.8rem; }

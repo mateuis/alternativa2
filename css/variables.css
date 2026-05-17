@@ -1,0 +1,37 @@
+/* ============================================================
+   VARIABLES & RESET
+   Alternativa Perfeita Academia
+   ============================================================ */
+
+:root {
+  --black:     #080810;
+  --navy:      #080c1a;
+  --blue:      #0a1628;
+  --neon:      #00c6ff;
+  --neon2:     #0072ff;
+  --neon-glow: rgba(0, 198, 255, 0.35);
+  --white:     #f0f4ff;
+  --gray:      #8a94b0;
+  --card-bg:   rgba(12, 18, 40, 0.85);
+  --border:    rgba(0, 198, 255, 0.15);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-track { background: var(--black); }
+::-webkit-scrollbar-thumb { background: var(--neon2); border-radius: 3px; }

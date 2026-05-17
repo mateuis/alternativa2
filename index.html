@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#080810" />
+  <meta name="description" content="Alternativa Perfeita Academia – A academia mais completa de Caucaia do Alto, Cotia-SP. Musculação, Crossfit, Funcional, Zumba e muito mais. Nota 4,9 ⭐ no Google." />
+  <meta name="keywords" content="academia Cotia, academia Caucaia do Alto, musculação Cotia, crossfit Cotia, personal trainer Cotia" />
+  <title>Alternativa Perfeita Academia | Caucaia do Alto – Cotia SP</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&family=Barlow+Condensed:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets (order matters) -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- ░░ PARTICLES CANVAS ░░ -->
+  <canvas id="particles"></canvas>
+
+  <!-- ░░ MOBILE MENU ░░ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <span class="mobile-close" onclick="toggleMenu()">✕</span>
+    <a href="#sobre"       onclick="toggleMenu()">Sobre</a>
+    <a href="#modalidades" onclick="toggleMenu()">Modalidades</a>
+    <a href="#galeria"     onclick="toggleMenu()">Galeria</a>
+    <a href="#planos"      onclick="toggleMenu()">Planos</a>
+    <a href="#depoimentos" onclick="toggleMenu()">Avaliações</a>
+    <a href="#contato"     onclick="toggleMenu()">Contato</a>
+    <a href="https://wa.me/5511956677257?text=Olá!%20Quero%20conhecer%20a%20Alternativa%20Perfeita%20Academia"
+       target="_blank" style="color:var(--neon)">WhatsApp ↗</a>
+  </div>
+
+  <!-- ░░ NAV ░░ -->
+  <nav>
+    <div class="nav-logo">
+      Alternativa Perfeita
+      <span>Academia · Caucaia do Alto · Cotia SP</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#modalidades">Modalidades</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#planos">Planos</a></li>
+      <li><a href="#depoimentos">Avaliações</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+
+    <a class="nav-cta"
+       href="https://wa.me/5511956677257?text=Olá!%20Quero%20agendar%20uma%20aula%20grátis"
+       target="_blank">Aula Grátis</a>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════════
+       HERO
+  ════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-lines"></div>
+
+    <div class="hero-content">
+      <!-- Left column -->
+      <div class="hero-text">
+        <div class="hero-badge">⚡ Caucaia do Alto · Cotia – SP</div>
+
+        <h1 class="hero-h1">
+          Transforme<br>seu corpo.<br><em>Evolua</em><br>sua mente.
+        </h1>
+
+        <p class="hero-sub">
+          A academia mais completa de <strong>Caucaia do Alto.</strong><br>
+          Equipamentos premium. Instrutores especializados. Resultados reais.
+        </p>
+
+        <div class="hero-btns">
+          <a class="btn-primary"
+             href="https://wa.me/5511956677257?text=Olá!%20Quero%20agendar%20uma%20aula%20grátis%20na%20Alternativa%20Perfeita%20Academia"
+             target="_blank">Agende uma Aula Grátis</a>
+
+          <a class="btn-ghost"
+             href="https://wa.me/5511956677257"
+             target="_blank">
+            <!-- WhatsApp SVG icon -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+            Falar no WhatsApp
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">4,9⭐</span>
+            <span class="stat-label">161 avaliações no Google</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">+500</span>
+            <span class="stat-label">Alunos Ativos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">9+</span>
+            <span class="stat-label">Modalidades</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right column -->
+      <div class="hero-visual">
+        <div class="hero-img-card">
+          <div class="corner-neon">
+            <h3>Sua transformação começa aqui</h3>
+            <p>Treine com quem entende de resultados</p>
+          </div>
+        </div>
+        <div class="float-badge">
+          ABERTO<br>ATÉ<br>23H
+          <small>SEG–SAB</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      scroll
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       SOBRE
+  ════════════════════════════════════════ -->
+  <section id="sobre">
+    <div class="section-inner">
+      <div class="sobre-grid">
+
+        <!-- Images side -->
+        <div class="sobre-imgs reveal">
+          <div class="sobre-main-img"></div>
+          <div class="sobre-small-img"></div>
+          <div class="sobre-exp">
+            <strong>4,9</strong>
+            <span>⭐ Google</span>
+          </div>
+        </div>
+
+        <!-- Text side -->
+        <div class="reveal">
+          <div class="section-label">Quem Somos</div>
+          <h2 class="section-h2">Uma academia feita<br>para <span>evoluir você</span></h2>
+          <p class="section-p">
+            Na Alternativa Perfeita Academia você encontra estrutura completa,
+            equipamentos de última geração e profissionais altamente qualificados.
+            Tudo pensado para o seu resultado.
+          </p>
+
+          <div class="sobre-cards">
+            <div class="diff-card"><div class="diff-icon">🏋️</div><div><h4>Equipamentos Novos</h4><p>Aparelhos modernos e em perfeito estado de conservação</p></div></div>
+            <div class="diff-card"><div class="diff-icon">❄️</div><div><h4>Ambiente Climatizado</h4><p>Conforto térmico em todas as estações do ano</p></div></div>
+            <div class="diff-card"><div class="diff-icon">📋</div><div><h4>Treinos Personalizados</h4><p>Programa adaptado ao seu objetivo e condicionamento</p></div></div>
+            <div class="diff-card"><div class="diff-icon">👨‍🏫</div><div><h4>Professores Especializados</h4><p>Equipe certificada e comprometida com seus resultados</p></div></div>
+            <div class="diff-card"><div class="diff-icon">👩</div><div><h4>Espaço Feminino</h4><p>Área exclusiva para mulheres se exercitarem com conforto</p></div></div>
+            <div class="diff-card"><div class="diff-icon">🎯</div><div><h4>Aulas Coletivas</h4><p>Turmas com horários flexíveis e instrutores motivadores</p></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       MODALIDADES
+  ════════════════════════════════════════ -->
+  <section id="modalidades">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-label">O Que Oferecemos</div>
+        <h2 class="section-h2">Modalidades para<br><span>cada objetivo</span></h2>
+      </div>
+
+      <div class="mod-grid">
+        <div class="mod-card reveal"><div class="mod-icon">🏋️‍♂️</div><h3>Musculação</h3><p>Hipertrofia, força e condicionamento com aparelhos de última geração e orientação especializada.</p></div>
+        <div class="mod-card reveal"><div class="mod-icon">🔥</div><h3>Crossfit</h3><p>Treinos de alta intensidade que combinam força, agilidade e resistência cardiovascular.</p></div>
+        <div class="mod-card reveal"><div class="mod-icon">⚡</div><h3>Funcional</h3><p>Exercícios que trabalham o corpo inteiro, melhorando equilíbrio, coordenação e performance.</p></div>
+        <div class="mod-card reveal"><div class="mod-icon">💃</div><h3>Zumba</h3><p>Dança + fitness em uma aula animada e divertida que queima calorias sem parecer treino.</p></div>
+        <div class="mod-card reveal"><div class="mod-icon">🎯</div><h3>Personal Trainer</h3><p>Atenção 100% focada no seu desenvolvimento com plano de treino totalmente individualizado.</p></div>
+        <div class="mod-card reveal"><div class="mod-icon">👩‍🦱</div><h3>Treino Feminino</h3><p>Programação especializada para o corpo feminino, com foco em resultados seguros e eficazes.</p></div>
+        <div class="mod-card reveal"><div class="mod-icon">🚴</div><h3>Aeróbicos</h3><p>Esteiras, bikes e elípticos para queima de gordura, saúde cardiovascular e bem-estar.</p></div>
+        <div class="mod-card reveal"><div class="mod-icon">🤰</div><h3>Para Gestantes</h3><p>Exercícios adaptados e seguros para cada fase da gestação, com acompanhamento especializado.</p></div>
+        <div class="mod-card reveal"><div class="mod-icon">🧑‍🤸</div><h3>Para Jovens</h3><p>Atividades adaptadas para adolescentes, desenvolvendo saúde, disciplina e autoconfiança.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       GALERIA
+  ════════════════════════════════════════ -->
+  <section id="galeria">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-label">Nossa Estrutura</div>
+        <h2 class="section-h2">Um espaço feito para<br><span>grandes resultados</span></h2>
+      </div>
+
+      <div class="gallery-grid reveal">
+        <div class="gallery-item" onclick="openLightbox(0)">
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&q=80" alt="Área de musculação" loading="lazy" />
+          <div class="gallery-overlay"><span>Área de Musculação</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(1)">
+          <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=800&q=80" alt="Equipamentos" loading="lazy" />
+          <div class="gallery-overlay"><span>Equipamentos</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(2)">
+          <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80" alt="Área funcional" loading="lazy" />
+          <div class="gallery-overlay"><span>Área Funcional</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(3)">
+          <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=800&q=80" alt="Cardio" loading="lazy" />
+          <div class="gallery-overlay"><span>Área Cardio</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(4)">
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1200&q=80" alt="Aulas coletivas" loading="lazy" />
+          <div class="gallery-overlay"><span>Aulas Coletivas</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(5)">
+          <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?w=800&q=80" alt="Treino feminino" loading="lazy" />
+          <div class="gallery-overlay"><span>Treino Feminino</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox overlay -->
+  <div class="lightbox" id="lightbox">
+    <span class="lb-close" onclick="closeLightbox()">✕</span>
+    <span class="lb-prev"  onclick="changeLb(-1)">‹</span>
+    <img id="lb-img" src="" alt="Galeria" />
+    <span class="lb-next"  onclick="changeLb(1)">›</span>
+  </div>
+
+  <!-- ════════════════════════════════════════
+       DEPOIMENTOS
+  ════════════════════════════════════════ -->
+  <section id="depoimentos">
+    <div class="section-inner">
+      <div class="reveal" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:2rem">
+        <div>
+          <div class="section-label">O Que Dizem</div>
+          <h2 class="section-h2">Resultados que<br><span>falam por si</span></h2>
+        </div>
+        <div class="google-score">
+          <div class="score">4,9</div>
+          <div class="score-info">
+            <span class="score-stars">⭐⭐⭐⭐⭐</span>
+            <span class="score-label">161 avaliações no Google</span>
+            <span class="score-label" style="color:var(--neon);margin-top:.2rem">Nota máxima na região</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials-wrapper reveal">
+        <div class="testimonials-track" id="testimonialTrack">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Melhor academia da região, aparelhos novos, completa e os instrutores são ótimos. Super recomendo para quem quer resultado de verdade."</p>
+            <div class="testimonial-author"><div class="author-avatar">M</div><div class="author-info"><strong>Marcos A.</strong><span>Aluno há 2 anos</span></div></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Profissionais top, ambiente top, vale demais o investimento. Nunca me senti tão bem treinando. A estrutura é incrível e os professores são muito atenciosos."</p>
+            <div class="testimonial-author"><div class="author-avatar">C</div><div class="author-info"><strong>Camila R.</strong><span>Aluna há 1 ano</span></div></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Um lugar top, espaçoso, instrutores atenciosos, equipamentos de primeira. É a academia ideal para quem quer qualidade e resultado."</p>
+            <div class="testimonial-author"><div class="author-avatar">F</div><div class="author-info"><strong>Felipe S.</strong><span>Aluno há 6 meses</span></div></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Comecei sem saber nada de musculação e hoje mal acredito na minha evolução. Os professores são pacientes e o espaço é sempre limpo e organizado."</p>
+            <div class="testimonial-author"><div class="author-avatar">A</div><div class="author-info"><strong>Ana P.</strong><span>Aluna há 8 meses</span></div></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Treino há anos aqui e recomendo de olhos fechados. Ambiente acolhedor, turmas de Zumba maravilhosas e equipamentos sempre em ótimas condições."</p>
+            <div class="testimonial-author"><div class="author-avatar">R</div><div class="author-info"><strong>Renata M.</strong><span>Aluna há 3 anos</span></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials-nav" id="testimonialNav"></div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       PLANOS
+  ════════════════════════════════════════ -->
+  <section id="planos">
+    <div class="section-inner">
+      <div class="reveal" style="text-align:center">
+        <div class="section-label" style="justify-content:center">Investimento</div>
+        <h2 class="section-h2">Escolha seu <span>plano ideal</span></h2>
+        <p class="section-p" style="margin:1rem auto 0;text-align:center">
+          Preços honestos, qualidade premium. Comece quando quiser — inclusive hoje.
+        </p>
+      </div>
+
+      <div class="planos-grid reveal">
+        <div class="plano-card">
+          <div class="plano-name">Mensal</div>
+          <div class="plano-price"><sub>R$</sub>120<small>/mês</small></div>
+          <div class="plano-period">Plano flexível · Sem fidelidade</div>
+          <ul class="plano-features">
+            <li>Acesso à musculação</li>
+            <li>Aulas coletivas</li>
+            <li>Avaliação física</li>
+            <li>App de treino</li>
+          </ul>
+          <a class="btn-plan-ghost" href="https://wa.me/5511956677257?text=Olá!%20Tenho%20interesse%20no%20plano%20mensal" target="_blank">Matricule-se</a>
+        </div>
+
+        <div class="plano-card">
+          <div class="plano-name">Trimestral</div>
+          <div class="plano-price"><sub>R$</sub>99<small>/mês</small></div>
+          <div class="plano-period">3 meses · Economia de 17%</div>
+          <ul class="plano-features">
+            <li>Tudo do Mensal</li>
+            <li>1 consulta nutricional</li>
+            <li>Treino personalizado</li>
+            <li>Suporte via WhatsApp</li>
+          </ul>
+          <a class="btn-plan-ghost" href="https://wa.me/5511956677257?text=Olá!%20Tenho%20interesse%20no%20plano%20trimestral" target="_blank">Matricule-se</a>
+        </div>
+
+        <div class="plano-card featured">
+          <div class="plano-badge">⚡ Mais Popular</div>
+          <div class="plano-name">Semestral</div>
+          <div class="plano-price"><sub>R$</sub>79<small>/mês</small></div>
+          <div class="plano-period">6 meses · Melhor custo-benefício</div>
+          <ul class="plano-features">
+            <li>Tudo do Trimestral</li>
+            <li>Personal trainer incluso</li>
+            <li>2 consultas nutricionais</li>
+            <li>Acesso à área feminina</li>
+            <li>Prioridade nas aulas</li>
+          </ul>
+          <a class="btn-plan" href="https://wa.me/5511956677257?text=Olá!%20Tenho%20interesse%20no%20plano%20semestral" target="_blank">Matricule-se Agora</a>
+        </div>
+
+        <div class="plano-card">
+          <div class="plano-name">Anual</div>
+          <div class="plano-price"><sub>R$</sub>59<small>/mês</small></div>
+          <div class="plano-period">12 meses · Máxima economia</div>
+          <ul class="plano-features">
+            <li>Tudo do Semestral</li>
+            <li>Personal ilimitado</li>
+            <li>Nutricionista mensal</li>
+            <li>Convide 1 amigo grátis</li>
+            <li>Camiseta exclusiva</li>
+          </ul>
+          <a class="btn-plan-ghost" href="https://wa.me/5511956677257?text=Olá!%20Tenho%20interesse%20no%20plano%20anual" target="_blank">Matricule-se</a>
+        </div>
+      </div>
+
+      <p style="text-align:center;color:var(--gray);font-size:.8rem;margin-top:1.5rem">
+        * Preços ilustrativos. Entre em contato para condições e promoções vigentes.
+      </p>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       PROMOÇÕES
+  ════════════════════════════════════════ -->
+  <section id="promocoes">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-label">Ofertas Especiais</div>
+        <h2 class="section-h2">Promoções que<br><span>você não pode perder</span></h2>
+      </div>
+
+      <div class="promo-banner reveal">
+        <div class="promo-card big">
+          <div class="promo-bg" style="background-image:url('https://images.unsplash.com/photo-1541534401786-2077eed87a74?w=1400&q=80')"></div>
+          <div class="promo-overlay" style="background:linear-gradient(135deg,rgba(0,5,30,.85) 0%,rgba(0,114,255,.25) 100%)"></div>
+          <div class="promo-content">
+            <span class="promo-tag">🌸 Especial Mães</span>
+            <h3>MÃES TREINAM GRÁTIS</h3>
+            <p>Traga sua mãe e ela treina gratuitamente no primeiro mês. Porque saúde também é presente de amor.</p>
+            <a class="promo-cta" href="https://wa.me/5511956677257?text=Olá!%20Quero%20saber%20mais%20sobre%20a%20promoção%20Mães%20Treinam%20Grátis" target="_blank">Quero aproveitar</a>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <div class="promo-bg" style="background-image:url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80')"></div>
+          <div class="promo-overlay" style="background:linear-gradient(180deg,rgba(0,0,0,.2) 0%,rgba(0,5,30,.9) 100%)"></div>
+          <div class="promo-content">
+            <span class="promo-tag">🆓 Experimental</span>
+            <h3>AULA GRÁTIS AGORA</h3>
+            <p>Venha experimentar sem compromisso. Sua primeira aula é por nossa conta.</p>
+            <a class="promo-cta" href="https://wa.me/5511956677257?text=Olá!%20Quero%20agendar%20minha%20aula%20grátis" target="_blank">Agendar agora</a>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <div class="promo-bg" style="background-image:url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80')"></div>
+          <div class="promo-overlay" style="background:linear-gradient(180deg,rgba(0,0,0,.2) 0%,rgba(0,5,30,.9) 100%)"></div>
+          <div class="promo-content">
+            <span class="promo-tag">👫 Indique Amigos</span>
+            <h3>INDIQUE &amp; GANHE</h3>
+            <p>Indique um amigo e ganhe desconto no próximo mês. Quanto mais indica, mais economiza.</p>
+            <a class="promo-cta" href="https://wa.me/5511956677257?text=Olá!%20Quero%20saber%20sobre%20o%20programa%20Indique%20e%20Ganhe" target="_blank">Participar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       INSTAGRAM
+  ════════════════════════════════════════ -->
+  <section id="instagram">
+    <div class="section-inner">
+      <div class="insta-header reveal">
+        <div>
+          <div class="section-label">Redes Sociais</div>
+          <h2 class="section-h2">Siga nossa<br><span>comunidade</span></h2>
+        </div>
+        <a class="insta-handle" href="https://instagram.com/alternativaperfeitaacademia" target="_blank">
+          <div class="ig-icon">📷</div>
+          <div>
+            <strong>@alternativaperfeitaacademia</strong>
+            <span>Clique para seguir no Instagram</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="insta-grid reveal">
+        <div class="insta-item"><img src="https://images.unsplash.com/photo-1534367507873-d2d7e24c797f?w=400&q=80" alt="Post 1" loading="lazy" /><div class="insta-item-overlay"><span>❤️ 247</span><span>💬 18</span></div></div>
+        <div class="insta-item"><img src="https://images.unsplash.com/photo-1581009137042-c552e485697a?w=400&q=80" alt="Post 2" loading="lazy" /><div class="insta-item-overlay"><span>❤️ 312</span><span>💬 24</span></div></div>
+        <div class="insta-item"><img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=400&q=80" alt="Post 3" loading="lazy" /><div class="insta-item-overlay"><span>❤️ 198</span><span>💬 15</span></div></div>
+        <div class="insta-item"><img src="https://images.unsplash.com/photo-1574680178305-b71d21f7f9db?w=400&q=80" alt="Post 4" loading="lazy" /><div class="insta-item-overlay"><span>❤️ 421</span><span>💬 37</span></div></div>
+        <div class="insta-item"><img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?w=400&q=80" alt="Post 5" loading="lazy" /><div class="insta-item-overlay"><span>❤️ 289</span><span>💬 21</span></div></div>
+        <div class="insta-item"><img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&q=80" alt="Post 6" loading="lazy" /><div class="insta-item-overlay"><span>❤️ 354</span><span>💬 29</span></div></div>
+        <div class="insta-item"><img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=400&q=80" alt="Post 7" loading="lazy" /><div class="insta-item-overlay"><span>❤️ 176</span><span>💬 12</span></div></div>
+        <div class="insta-item"><img src="https://images.unsplash.com/photo-1536922246289-88c42f957773?w=400&q=80" alt="Post 8" loading="lazy" /><div class="insta-item-overlay"><span>❤️ 508</span><span>💬 44</span></div></div>
+      </div>
+
+      <div class="insta-cta-wrap reveal">
+        <a class="btn-insta" href="https://instagram.com/alternativaperfeitaacademia" target="_blank">📷 Seguir no Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       CONTATO
+  ════════════════════════════════════════ -->
+  <section id="contato">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-label">Localização &amp; Contato</div>
+        <h2 class="section-h2">Venha nos <span>conhecer</span></h2>
+      </div>
+
+      <div class="contato-grid">
+        <!-- Info + Map -->
+        <div class="reveal">
+          <div class="contato-info">
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h4>Endereço</h4>
+                <p>R. Manuel Lopes, 170 – Caucaia do Alto<br>Cotia – SP, 06727-212</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📱</div>
+              <div>
+                <h4>WhatsApp / Telefone</h4>
+                <p><a href="https://wa.me/5511956677257">(11) 95667-7257</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">🕐</div>
+              <div>
+                <h4>Horário de Funcionamento</h4>
+                <p>Segunda a Sábado: 6h às 23h<br>Domingo: Consulte-nos</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">⭐</div>
+              <div>
+                <h4>Avaliação Google</h4>
+                <p>4,9 estrelas · 161 avaliações<br>
+                  <a href="https://maps.google.com" target="_blank">Ver no Google Maps</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.1!2d-46.9!3d-23.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDM2JzAwLjAiUyA0NsKwNTQnMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1"
+              allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Mapa Alternativa Perfeita Academia">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <div class="contact-form reveal">
+          <h3>Fale Conosco</h3>
+          <div class="form-group"><label>Nome Completo</label><input type="text" placeholder="Seu nome" /></div>
+          <div class="form-group"><label>WhatsApp</label><input type="tel" placeholder="(11) 99999-9999" /></div>
+          <div class="form-group"><label>E-mail</label><input type="email" placeholder="seu@email.com" /></div>
+          <div class="form-group">
+            <label>Interesse</label>
+            <select>
+              <option>Musculação</option>
+              <option>Crossfit / Funcional</option>
+              <option>Zumba</option>
+              <option>Personal Trainer</option>
+              <option>Treino Feminino</option>
+              <option>Para Gestantes</option>
+              <option>Planos e Preços</option>
+              <option>Outro</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Mensagem</label><textarea placeholder="Fale mais sobre seu objetivo..."></textarea></div>
+          <button class="btn-submit" onclick="sendWhatsApp()">Enviar via WhatsApp 💬</button>
+          <p style="text-align:center;font-size:.75rem;color:var(--gray);margin-top:1rem">
+            Responderemos em até 1 hora durante o horário comercial
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       CTA STRIP
+  ════════════════════════════════════════ -->
+  <div class="cta-strip">
+    <h2>Sua transformação começa com um passo</h2>
+    <p>Venha fazer sua aula experimental gratuita. Sem compromisso, sem taxa.</p>
+    <a class="btn-dark"
+       href="https://wa.me/5511956677257?text=Olá!%20Quero%20agendar%20minha%20aula%20experimental%20gratuita%20na%20Alternativa%20Perfeita%20Academia!"
+       target="_blank">Agendar Aula Grátis Agora</a>
+  </div>
+
+  <!-- ════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-size:1.8rem">
+          Alternativa Perfeita
+          <span>Academia · Caucaia do Alto · Cotia SP</span>
+        </div>
+        <p>Mais que uma academia — uma comunidade que transforma vidas através do movimento, disciplina e superação.</p>
+        <div class="footer-social">
+          <a class="social-btn" href="https://instagram.com/alternativaperfeitaacademia" target="_blank" title="Instagram">📷</a>
+          <a class="social-btn" href="https://wa.me/5511956677257" target="_blank" title="WhatsApp">💬</a>
+          <a class="social-btn" href="https://facebook.com" target="_blank" title="Facebook">👤</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#modalidades">Modalidades</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#planos">Planos e Preços</a></li>
+          <li><a href="#depoimentos">Avaliações</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Modalidades</h4>
+        <ul>
+          <li>Musculação</li>
+          <li>Crossfit</li>
+          <li>Funcional</li>
+          <li>Zumba</li>
+          <li>Personal Trainer</li>
+          <li>Treino Feminino</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Horários</h4>
+        <ul>
+          <li>Segunda: 6h – 23h</li>
+          <li>Terça: 6h – 23h</li>
+          <li>Quarta: 6h – 23h</li>
+          <li>Quinta: 6h – 23h</li>
+          <li>Sexta: 6h – 23h</li>
+          <li>Sábado: 8h – 18h</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Alternativa Perfeita Academia. Todos os direitos reservados.</p>
+      <p class="slogan">"Seu limite é apenas o começo."</p>
+    </div>
+  </footer>
+
+  <!-- ░░ WHATSAPP FLOAT ░░ -->
+  <a class="wa-float"
+     href="https://wa.me/5511956677257?text=Olá!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20a%20academia"
+     target="_blank" title="WhatsApp">
+    <span class="wa-tooltip">Fale conosco agora!</span>
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <!-- ░░ SCRIPTS (order matters) ░░ -->
+  <script src="js/particles.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/scroll-reveal.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/contact.js"></script>
+
+</body>
+</html>
